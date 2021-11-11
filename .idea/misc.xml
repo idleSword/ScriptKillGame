@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26979166666666665" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/drawable-v24/test_custom.xml" value="0.1537037037037037" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/drawable/SearchBtn_custom.xml" value="0.1175925925925926" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/drawable/button_custom.xml" value="0.1175925925925926" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/drawable/scriptbtn_custom.xml" value="0.1175925925925926" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/layout/activity_amus_scene_choose.xml" value="0.20208333333333334" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/layout/activity_beacon.xml" value="0.264" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/layout/activity_main.xml" value="0.19298245614035087" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/layout/activity_mode_choose.xml" value="0.4" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/layout/activity_player.xml" value="0.2" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/layout/activity_room.xml" value="0.20208333333333334" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/layout/activity_script_choose.xml" value="0.20208333333333334" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/layout/rotate_view.xml" value="0.14322916666666666" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.18541666666666667" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.18541666666666667" />
+        <entry key="..\:/Android/AndroidStudioProjects/app/src/main/res/xml/scan_rorate.xml" value="0.14322916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

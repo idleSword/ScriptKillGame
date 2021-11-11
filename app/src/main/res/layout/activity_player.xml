@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayerActivity"
+    android:id="@+id/PlayerView">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"></com.baidu.mapapi.map.MapView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/bMapView">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSearch"
+            android:text="查找设备"/>
+
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbtnSwitch"
+            android:text="开/关蓝牙设备"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/button_custom"
+        android:id="@+id/locateMeBtn"
+        android:layout_alignBottom="@+id/bMapView"/>
+
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/locateMeBtn"
+        android:background="@drawable/searchbtn_custom" />
+
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/searchBtn"
+        android:background="@drawable/camerabtn_custom" />
+
+    <Button
+        android:id="@+id/clueBtn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/cameraBtn"
+        android:background="@drawable/cluebtn_custom"/>
+
+    <Button
+        android:id="@+id/scriptBtn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/clueBtn"
+        android:background="@drawable/scriptbtn_custom"/>
+
+
+    <ImageView
+        android:id="@+id/scan_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/circle"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

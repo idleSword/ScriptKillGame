@@ -1,0 +1,138 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+package controller {
+    abstract AppCompatActivity {}
+    class MainActivity {
+        -usr : String
+        -psw : String
+        -matchPsw : String
+        -et_usr : EditText
+        -et_psw : EditText
+        #oncreate(Bundle savedInstanceState) : void
+        -Init() : void
+        +login(View view) : void
+        -readPsw(String usr) : String
+        -saveLoginInfo(boolean status, String usr) : void
+        +register((View view) : void
+        #onActivityResult(int requestCode, int resultCode, Intent data) : void
+    }
+
+    class RegisterActivity {
+        -usr : String
+        -psw : String
+        -confirmPsw : String
+        -et_usr : EditText
+        -et_psw : EditText
+        -et_confPsw : EditText
+        #oncreate((Bundle savedInstanceState) : void
+        +register((View view) : void
+        -isExistUserName(String userName) : boolean
+        -saveRegisterInfo((String userName, String psw) : void
+    }
+
+    class ModeChooseActivity {
+        -mode : RadioGroup
+        #oncreate((Bundle savedInstanceState) : void
+        +modeChoose((View view) : void
+    }
+
+    class ScriptChooseActivity {
+        -rg_script : RadioGroup
+        #oncreate((Bundle savedInstanceState) : void
+        +scriptChose((View view) : void
+    }
+
+    class AmusSceneChooseActivity {
+        -rg_scene :RadioGroup
+        #oncreate((Bundle savedInstanceState) : void
+        +sceneChose((View view) : void
+    }
+
+    class RoomActivity {
+
+    }
+
+    class PlayerActivity {
+        +searchBtn : Button
+        +openBtn : ToggleButton
+        +beacon : Beacon
+        -bluetoothAdapter : BluetoothAdapter
+        +context : Context
+        #oncreate((Bundle savedInstanceState) : void
+        -initPermission() : void
+        +onRequestPermission(int requestCode, String[] permissions, int[] grantResults) : void
+        #onDestroy() : void
+    }
+    MainActivity --|>AppCompatActivity
+    RegisterActivity --|>AppCompatActivity
+    ModeChooseActivity --|>AppCompatActivity
+    ScriptChooseActivity --|>AppCompatActivity
+    AmusSceneChooseActivity --|>AppCompatActivity
+    RoomActivity --|>AppCompatActivity
+    PlayerActivity --|>AppCompatActivity
+}
+PlayerActivity <-- Beacon
+package model {
+    class Beacon {
+        +list : ArrayList<String>
+        -bluetoothAdapter : BluetoothAdapter
+        -bondDevices : Set<BluetoothDevice>
+        -searchReceiver : BroadcastReceiver
+        +Beacon()
+        +getAdapter() : BluetoothAdapter
+        +searchDevice() : void
+        +destroyReceiver() : void
+    }
+
+    class Clue {
+        -isPublic : boolean
+        -clueDescription : String
+        +Clue(String clue,boolean isPublic)
+        +setPublic() : void
+        +getState() : boolean
+        +getDescription : String
+    }
+
+    class SchoolMap {
+    }
+
+    class Player {
+        -role : String
+        -lon : double
+        -lat : double
+        +clueList : ArrayList<Integer>
+        +Player(String role)
+        +addClue(Integer id) : void
+    }
+
+    class Script {
+        +roleList : ArrayList<String>
+        +role2PlayerId : HashMap<String, Integer>
+    }
+}
+
+package service {
+    abstract Manager {
+        +{abstract} setBeacon() : void
+        +{abstract} loadData() : void
+    }
+
+    class ScriptKillManager {
+        +setBeacon() : void
+        +loadData() : void
+    }
+
+    class AmusManager {
+            +setBeacon() : void
+            +loadData() : void
+    }
+
+    interface PhotoProgress {
+    }
+
+    AmusManager --|>Manager
+    ScriptKillManager --|>Manager
+}
+@enduml

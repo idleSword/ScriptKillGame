@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/green">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="手机号/邮箱"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/edtt_usr"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="密码"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/edtt_psw"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="再次输入确认密码"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/edtt_psw_confirm"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="学校"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/edtt_school"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="注册"
+            android:onClick="register"/>
+
+
+</LinearLayout>
